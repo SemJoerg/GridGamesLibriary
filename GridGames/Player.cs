@@ -1,6 +1,6 @@
 ﻿namespace GridGames
 {
-    struct Player<MarkerType>
+    public struct Player<MarkerType>
     {
         public readonly bool emptyPlayer;
         public int Winns { get; set; }

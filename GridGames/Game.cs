@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace GridGames
 {
-    class Game <PlayerMarkerType>
+    public class Game <PlayerMarkerType>
     {
         private Grid grid;
         public uint GridWidth { get { return grid.Width; } }
