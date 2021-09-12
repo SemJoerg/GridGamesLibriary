@@ -7,6 +7,8 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description />
+    <PackageProjectUrl>https://github.com/DerSemmel/GridGames</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/DerSemmel/GridGames</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
