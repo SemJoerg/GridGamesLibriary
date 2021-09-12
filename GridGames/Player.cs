@@ -1,6 +1,6 @@
 ﻿namespace GridGames
 {
-    public struct Player<MarkerType>
+    public class Player<MarkerType>
     {
         public readonly bool emptyPlayer;
         public int Winns { get; set; }
@@ -8,17 +8,9 @@
         public byte GridId { get; set; }
         public MarkerType Marker { get; set; }
 
-        public Player(string name, byte gridId, MarkerType marker)
-        {
-            emptyPlayer = false;
-            Winns = 0;
-            Name = name;
-            GridId = gridId;
-            Marker = marker;
-        }
 
         //Creates a emptyPlayer (Is used for the defaultPlayer)
-        public Player(object leaveEmpty = null)
+        public Player()
         {
             emptyPlayer = true;
             Winns = 0;
@@ -35,6 +27,18 @@
             GridId = 0;
             Marker = marker;
         }
+
+        //Non emptyPlayer
+        public Player(string name, byte gridId, MarkerType marker)
+        {
+            emptyPlayer = false;
+            Winns = 0;
+            Name = name;
+            GridId = gridId;
+            Marker = marker;
+        }
+
+        
 
         static public Player<MarkerType> GetPlayerByGridId(Player<MarkerType>[] players, uint gridId)
         {
