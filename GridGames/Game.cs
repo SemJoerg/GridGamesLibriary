@@ -48,7 +48,7 @@ namespace GridGames
             NextPlayer = Players[currentPlayerIndex];
 
             outputGrid = _outputGrid;
-            grid.FieldChangedEvent += GridChangedDebug;
+            //grid.FieldChangedEvent += GridChangedDebug;
             grid.FieldChangedEvent += GridFieldChanged;
             grid.GridIsFullEvent += gridIsFull;
         }
